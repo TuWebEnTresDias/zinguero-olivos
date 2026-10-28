@@ -3,3 +3,19 @@
 /* Adaptación de la demo techista enviada al lead: portada de ancho completo,
    barra superior destacada, encabezado claro y acento naranja. */
 .topline{background:#c2410c;color:#fff;letter-spacing:1px}.topline .wrap{min-height:42px}.header{background:#fff}.hero{position:relative;background:#19201c;color:#fff}.hero-background{position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,21,18,.94) 0%,rgba(18,25,21,.8) 49%,rgba(18,25,21,.35) 100%),url("assets/estructura-madera.jpg") center 45%/cover no-repeat}.hero-grid{position:relative;display:block;min-height:570px;padding-top:110px;padding-bottom:110px}.hero-copy{max-width:720px}.hero h1{font-size:clamp(48px,5.2vw,74px);line-height:1.1}.hero h1 em{color:#fb923c}.hero .eyebrow{color:#fed7aa}.hero .intro,.hero-note p{color:#f1f5ef}.hero-note strong{color:#fff}.hero .text-link{color:#fff}.hero-visual{display:none}.hero-bottom{position:relative;border-color:#ffffff55;color:#fff}.button{background:#c2410c}.button:hover{background:#9a3412}.craft-band{background:#f8fafc;color:#252d29;border-bottom:1px solid #e2e8f0}.craft-band i{color:#c2410c}.services{background:#fff}.service-grid{border:0;gap:18px}.service-card,.service-card+.service-card{border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc}.service-card:hover{background:#fff;box-shadow:0 8px 30px #00000014}.works{background:#f1f5f9}.work{border-radius:10px}.service-card svg{color:#c2410c}@media(max-width:760px){.hero-grid{min-height:550px;padding-top:80px;padding-bottom:70px}.hero-background{background:linear-gradient(90deg,rgba(14,21,18,.9),rgba(18,25,21,.62)),url("assets/estructura-madera.jpg") center/cover no-repeat}.hero h1{font-size:clamp(43px,10vw,60px)}.service-card+.service-card{border:1px solid #e2e8f0}}
+
+/* La demo original usa flex horizontal y 100vh en el hero. Esta página
+   tiene dos bloques verticales; dejarlos en flujo evita cortes y columnas. */
+.hero{display:block;height:auto;min-height:0}
+.hero-grid{width:min(1200px,calc(100% - 88px))}
+.hero-bottom{position:relative}
+@media(max-width:760px){
+  .hero-grid{width:calc(100% - 36px);min-height:0;padding:68px 0 44px}
+  .hero h1{font-size:clamp(40px,10vw,58px);line-height:1.1;overflow-wrap:normal}
+  .hero .intro{max-width:34rem}
+  .hero-bottom{width:calc(100% - 36px);padding:18px 0}
+}
+@media(max-width:410px){
+  .hero h1{font-size:clamp(36px,10vw,41px);letter-spacing:-1.3px}
+  .hero .button{max-width:100%}
+}
