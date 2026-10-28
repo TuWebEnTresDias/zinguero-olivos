@@ -19,3 +19,9 @@
   .hero h1{font-size:clamp(36px,10vw,41px);letter-spacing:-1.3px}
   .hero .button{max-width:100%}
 }
+
+/* Ajustes de navegación, lectura y consultas. */
+@media (min-width:761px){.menu-toggle:not([hidden]){display:none}}
+.topline{font-size:12px}.section-heading>p,.service-card p,.process p,.contact p{font-size:15px}.service-card a,.text-link{font-size:14px}.form-card>p{font-size:14px}label{font-size:14px}input,textarea{font-size:16px}.form-card .privacy-note,.form-card .form-notice{font-size:12px}.gallery-note{font-size:12px}.hero-note p{font-size:13px}
+@media(max-width:760px){.topline{font-size:10px}.header-inner{min-height:72px}.menu-toggle{min-height:44px;padding:10px 14px}nav{display:flex;flex-direction:column;align-items:stretch;padding:8px 0 18px;gap:0}nav a:not(.button){padding:13px 4px;font-size:15px}nav .button.small{min-height:48px;justify-content:center;margin-top:8px;font-size:14px}.hero-grid{padding:48px 0 38px}.hero h1{font-size:clamp(38px,9vw,58px)}.hero .intro{font-size:16px;line-height:1.6}.hero .button{min-height:52px}.hero-note p{font-size:13px}.section-heading>p,.service-card p,.process p,.contact p{font-size:15px}.floating-contact{bottom:max(15px,env(safe-area-inset-bottom));right:15px}.work-caption{font-size:19px}.work-caption small{font-size:10px}.gallery-note{font-size:12px}}
+@media(max-width:410px){.hero h1{font-size:clamp(34px,10vw,41px)}.hero .actions{align-items:stretch}.hero .button{justify-content:center}.hero .text-link{align-self:flex-start}.gallery{grid-template-columns:1fr}.work{height:300px}}
